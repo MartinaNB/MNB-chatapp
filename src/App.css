@@ -1,0 +1,126 @@
+body{
+  background-color:#142645 ;
+}
+
+.mnbApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.mnbApp-header {
+  background-color: #e9d5d8;
+  font-family:'Poppins';
+  font-size: 30px;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: #142645;
+}
+
+.mnb-messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.mnb-messages {
+  display: flex;
+  margin-top: 10px;
+}
+
+.mnb-messages.currentMember {
+  /*justify-content: flex-end;*/
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.mnb-message-content {
+  display: inline-block;
+}
+
+.currentMember > .mnb-message-content {
+  align-items: flex-end;
+}
+
+.mnb-messages > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+  padding-right: 5px;
+}
+
+.currentMember > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+  padding-right: 5px;
+}
+
+.mnb-message-content > .username {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  padding-bottom: 4px;
+  
+}
+
+.mnb-message-content > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: rgb(173, 236, 171);
+  color: rgb(37, 4, 84);
+  display: inline-block;
+}
+
+.currentMember > .mnb-message-content .text {
+  background-color: rgb(226, 247, 246);
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+input {
+  padding: 5px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e9d5d8;
+  color: #1e1c1c;
+  flex-grow: 1;
+}
+
+button {
+  padding: 5px 10px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  background-color: #e9d5d8;
+  color: #3e3a3a;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: aquamarine;
+  color: #1e1c1c;
+}
